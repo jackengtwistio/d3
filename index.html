@@ -1,0 +1,33 @@
+<html>
+  <head> </head>
+  <body>
+    <div id="main" class="container">
+      <h1>People</h1>
+      <ul class="people">
+        <li>John Doe</li>
+        <li>Jane Doe</li>
+        <li>Jim Doe</li>
+      </ul>
+    </div>
+    <svg></svg>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore-compat.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyASxytQJz50f3ASno_zXBhxEVqqDhYxxM4",
+        authDomain: "d3-udemy-ninja.firebaseapp.com",
+        projectId: "d3-udemy-ninja",
+        storageBucket: "d3-udemy-ninja.appspot.com",
+        messagingSenderId: "477086664167",
+        appId: "1:477086664167:web:6a071a4a52302fcef1e942",
+        measurementId: "G-KVQWHRWFJ9",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
